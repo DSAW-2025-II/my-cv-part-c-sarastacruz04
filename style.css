@@ -1,0 +1,85 @@
+body {
+    background-color: pink;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /*Para que los navegadores no sobreescriban*/
+    padding: 0; /*Para que los navegadores no sobreescriban*/
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+}
+
+.Caja1, .Caja2, .Caja3 {
+    background-color: white;
+    padding: 15px;
+}
+
+.Caja1 {
+    flex-wrap: wrap; /*Los elementos se van a la otra linea si no hay espacio*/
+    align-items: flex-start; /*Me sirvio para la foto*/
+    display: flex; /*Coloca los elementos uno al aldo del otro*/
+    gap:20px; /*Espacio entre los elementos de la caja*/
+}
+
+.foto {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.datos1 {
+    flex:1; /*Ocupa todo el espacio restante disponible en el flexbox*/
+    min-width: 250px;
+}
+
+
+.Caja2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.experiencia, .eduacion {
+    flex: 1; /*Ambas columnas ocupan espacio equitativo*/
+    min-width: 300px;
+}
+
+.item {
+    margin-bottom: 15px; /*Espacio entre cad item*/
+}
+
+.Caja3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logros, .hobbies {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+h2 {
+    margin-bottom: 10px; /*Deja un espacio debajo del titulo*/
+}
+
+p {
+    line-height: 1.5; /*Espacio entre lineas*/
+}
+
+@media (max-width: 768px) { /*ESpacio para tablet o celular*/
+    .Caja1, .Caja2, .Caja3 {
+        flex-direction: column;
+    }
+
+    .foto {
+        margin: 0 auto; /*Se centra*/
+    }
+}
+
+
+
+
+
